@@ -7,4 +7,7 @@ document.getElementById("volume").value = volume;
 
 }
 
-window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
+window.onload = function() {
+const myForm = document.getElementById('MyForm');
+myForm.addEventListener('submit', volume_sphere);
+};mit = volume_sphere;
