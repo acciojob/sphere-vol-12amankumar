@@ -1,13 +1,10 @@
 function volume_sphere(e) {
 e.preventDefault();
-//Write your code here
-const radius = document.getElementById("radius").value;
+const radius = document.getElementById("Radius").value;
 const volume = (4 / 3) Math.PI Math.pow(radius, 3);
-document.getElementById("volume").value = volume;
-
+document.getElementById("volume").value = volume.toFixed(2);
 }
-
 window.onload = function() {
-const myForm = document.getElementById('MyForm');
-myForm.addEventListener('submit', volume_sphere);
-};mit = volume_sphere;
+const calculateButton = document.getElementById("Calculate");
+calculateButton.addEventListener("click", volume_sphere);
+};
